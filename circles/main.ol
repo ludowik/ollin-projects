@@ -1,3 +1,5 @@
+import "circle"
+
 graphics.canvas(W, H, "circles")
 
 var xx = 0
@@ -8,5 +10,5 @@ func draw()
 end
 
 func mouse.moved(x, y)
-xx, yy = x, y
+    xx, yy = x, y
 end
