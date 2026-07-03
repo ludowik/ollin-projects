@@ -1,7 +1,7 @@
 class Circle
 
 func init(x, y)
-self.set(x,y)
+self.set(math.rand(W),math.rand(H))
  
 end
 
