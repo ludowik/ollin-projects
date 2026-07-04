@@ -17,7 +17,6 @@ func draw()
    ## graphics.clear(colors.GREEN)
    for c in circles do
    graphics.circle( c.x, c.y, 10, 10)
-    
    end
     
    
