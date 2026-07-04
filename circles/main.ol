@@ -4,7 +4,7 @@ graphics.canvas(W, H, "circles")
 
 var img = image.load("image.jpg")
 
-func _setup()
+func setup()
     global circles = []
     for i in [1,10] do
         circles[i] = Circle(0,0)
