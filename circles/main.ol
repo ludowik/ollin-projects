@@ -6,17 +6,17 @@ var img = image.load("image.jpg")
 
 func setup()
     global circles = []
-    for i in [1,10] do
+    for i in [1;10] do
         circles[i] = Circle(0,0)
         print(circles[i])
         end
 end 
 
 func draw()
-    image.draw(img, 0,0)
+   image.draw(img, 0,0)
    ## graphics.clear(colors.GREEN)
    for c in circles do
-   graphics.circle( c.x, c.y, 10, 10)
+       graphics.circle( c.x, c.y, 10, 10)
    end
     
    
