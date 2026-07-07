@@ -1,8 +1,10 @@
 class Circle
 
-    func init()
-        self.set(math.rand(W),math.rand(H))
-        self.r = 10
+    func init(x, y, r)
+        self.set(x, y)
+        self.r = r
+        self.clr = Color.random()
+        self.border = math.rand(15)
     end
 
     func set(x, y)
@@ -11,9 +13,11 @@ class Circle
     end
 
     func draw()
-        graphics.fill(colors.GRAY)
-        self.r = math.sin(elapsedTime) * 10
-        graphics.circle( self.x, self.y, self.r)
+        graphics.stroke(self.clr)
+        graphics.strokeSize(self.border)
+        graphics.fill(self.clr)
+        var r = math.sin(elapsedTime) * self.r
+        graphics.circle( self.x, self.y, r)
     end
 
 end
