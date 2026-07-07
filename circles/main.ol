@@ -24,8 +24,8 @@ func setup()
 end
 
 func draw()
-    graphics.blendMode(blend.ADD)
-    graphics.clear(Color(0, 0, 0, .1))
+    graphics.blendMode(blend.ALPHA)
+    graphics.clear(Color(0, 0, 0, .05))
     for c in circles do
         c.draw()
     end
