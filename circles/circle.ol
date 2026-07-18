@@ -8,6 +8,7 @@ class Circle
         self.clr.a = math.clamp(math.rand(10/r), .05, .8)
         self.border = math.rand(15)
         self.start = math.rand(math.TAU)
+        se
     end
 
     func draw()
@@ -15,7 +16,7 @@ class Circle
         graphics.strokeSize(self.border)
         graphics.fill(self.clr)
         var r = math.sin(elapsedTime) * self.r
-        graphics.circle( self.x, self.y, r, 4)
+        graphics.circle(self.x, self.y, r)
     end
 
 end
