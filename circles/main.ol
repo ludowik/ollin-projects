@@ -30,4 +30,3 @@ func draw()
         c.draw()
     end
 end
-
