@@ -19,13 +19,13 @@ func setup()
     end
 
     level(1)
-    level(3)
-    level(7.5)
+##    level(3)
+##    level(7.5)
 end
 
 func draw()
     graphics.blendMode(blend.ALPHA)
-    graphics.clear(Color(0, 0, 0, .05))
+    graphics.clear(0, .05)
     for c in circles do
         c.draw()
     end
