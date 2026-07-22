@@ -8,7 +8,6 @@ class Circle
         self.clr.a = math.clamp(math.rand(10/r), .05, .8)
         self.border = math.rand(15)
         self.start = math.rand(math.TAU)
-        se
     end
 
     func draw()
