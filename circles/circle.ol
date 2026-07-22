@@ -11,10 +11,11 @@ class Circle
     end
 
     func draw()
-        graphics.stroke(self.clr)
-        graphics.strokeSize(self.border)
+        ## graphics.stroke(self.clr)
+        ## graphics.strokeSize(self.border)
         graphics.noStroke()
         graphics.fill(self.clr)
+
         var r = math.sin(elapsedTime) * self.r
         graphics.circle(self.x, self.y, r)
     end
