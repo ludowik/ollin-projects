@@ -19,8 +19,9 @@ func setup()
     end
 
     level(1)
-##    level(3)
-##    level(7.5)
+    level(3)
+    level(5)
+    level(7)
 end
 
 func draw()

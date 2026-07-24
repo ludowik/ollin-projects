@@ -16,8 +16,9 @@ class Circle
         graphics.noStroke()
         graphics.fill(self.clr)
 
-        var r = math.sin(elapsedTime) * self.r
+        var r = math.sin(self.x+self.y+elapsedTime) * self.r
         graphics.circle(self.x, self.y, r)
+
     end
 
 end
