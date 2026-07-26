@@ -17,16 +17,17 @@ func draw()
 
     image.mapPixel(canvas, func (x, y)
         var camera = graphics.camera(0, 50, 0, x, 0, y)
-        var vd = camera.getViewDi()
+        var vd = camera.getViewDir()
         var dstToGround = -50 / vd.y
 
-        var x, y, z = 
+        var _x, _y, _z = 
              0 + vd.x * dstToGround,
             50 + vd.y * dstToGround,
              0 + vd.z * dstToGround
              
-        var ny = y * SCALE
-        var n = math.noise(x * SCALE, ny, t)
+        ## var ny = y * SCALE
+        ## var n = math.noise(x * SCALE, ny, t)
+        var n = math.noise(_x, _z)
         var v = math.clamp((n - 0.5) * 2.0 + 0.5, 0, 1)
         return 0.1 + 0.9 * v * v, 0.2 + 0.8 * v, 0.4 + 0.6 * v, 1
     end)
