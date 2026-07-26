@@ -20,7 +20,8 @@ func draw()
         var vd = camera.getViewDi()
         var dstToGround = -50 / vd.y
 
-        ## var x, y, z = 
+        var x, y, z = 
+            0 + vd.x * dstToGround,
         var ny = y * SCALE
         var n = math.noise(x * SCALE, ny, t)
         var v = math.clamp((n - 0.5) * 2.0 + 0.5, 0, 1)
