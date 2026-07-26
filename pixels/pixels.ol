@@ -18,7 +18,7 @@ func draw()
 
     var vd = camera.getViewDir()
     image.mapPixel(canvas, func (x, y)
-        var dstToGround = -50/vd.y
+        var dstToGround = -50 / vd.y
 
         ## var x, y, z = 
         var ny = y * SCALE
