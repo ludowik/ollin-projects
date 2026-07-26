@@ -10,15 +10,15 @@ math.noiseSeed(7)
 var canvas = image.create(LOW_W, LOW_H)
 
 func setup()
-    global camera = graphics.camera(px,py,pz, tx,ty,tz [, fovy])    
+    global camera = graphics.camera(0, 50, 0, 0, 0, 250)    
 end
 
 func draw()
     var t = elapsedTime * 0.3
 
     image.mapPixel(canvas, func (x, y)
-        x -= 96
-        x /= (y*.01+1)
+        var vd = camera.getViewDir()
+        
         var ny = y * SCALE
         var n = math.noise(x * SCALE, ny, t)
         var v = math.clamp((n - 0.5) * 2.0 + 0.5, 0, 1)
