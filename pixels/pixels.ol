@@ -16,9 +16,9 @@ end
 func draw()
     var t = elapsedTime * 0.3
 
+    var vd = camera.getViewDir()
     image.mapPixel(canvas, func (x, y)
-        var vd = camera.getViewDir()
-
+        var dstToGround = -50/vd.y
         
         var ny = y * SCALE
         var n = math.noise(x * SCALE, ny, t)
