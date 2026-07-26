@@ -15,9 +15,9 @@ end
 func draw()
     var t = elapsedTime * 0.3
 
-    var vd = camera.getViewDir()
     image.mapPixel(canvas, func (x, y)
-        var camera = graphics.camera(0, 50, 0, 0, 0, 250)    
+        var camera = graphics.camera(0, 50, 0, x, 0, y)
+        var vd = camera.getViewDi()
         var dstToGround = -50 / vd.y
 
         ## var x, y, z = 
