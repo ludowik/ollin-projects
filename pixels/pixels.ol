@@ -18,6 +18,7 @@ func draw()
 
     image.mapPixel(canvas, func (x, y)
         var vd = camera.getViewDir()
+
         
         var ny = y * SCALE
         var n = math.noise(x * SCALE, ny, t)
