@@ -10,7 +10,6 @@ math.noiseSeed(7)
 var canvas = image.create(LOW_W, LOW_H)
 
 func setup()
-    global camera = graphics.camera(0, 50, 0, 0, 0, 250)    
 end
 
 func draw()
@@ -18,6 +17,7 @@ func draw()
 
     var vd = camera.getViewDir()
     image.mapPixel(canvas, func (x, y)
+        var camera = graphics.camera(0, 50, 0, 0, 0, 250)    
         var dstToGround = -50 / vd.y
 
         ## var x, y, z = 
