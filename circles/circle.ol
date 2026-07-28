@@ -5,7 +5,7 @@ class Circle
         self.y = y
         self.r = r
         self.clr = Color.random()
-        self.clr.a = math.clamp(math.rand(.1^r), .02, .03)
+        self.clr.a = 0 ## math.clamp(math.rand(.1^r), .02, .03)
         self.border = math.rand(15)
         self.start = math.rand(math.TAU)
     end
