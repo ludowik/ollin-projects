@@ -1,0 +1,5 @@
+{
+  "uid": "check-syntax",
+  "name": "Check syntax",
+  "entry": "main.ol"
+}
