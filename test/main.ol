@@ -4,8 +4,11 @@ graphics.canvas(W, H)
 func draw()
     graphics.clear()
     graphics.translate(CW, CH)
+    var R = W / 3
+    var points = []
     for angle in [0;math.TAU;.1] do
-        var r = math.noise(angle, elapsedTime) * 100
+        var r = math.noise(angle, elapsedTime) * R
+        points.piush
         graphics.point(
             math.cos(angle) * r,
             math.sin(angle) * r
