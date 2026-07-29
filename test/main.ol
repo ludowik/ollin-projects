@@ -18,4 +18,6 @@ func draw()
 
     circle(W)
     circle(W-50)
+    circle(W-150)
+    circle(W-300)
 end
