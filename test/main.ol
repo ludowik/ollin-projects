@@ -1,18 +1,5 @@
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
-print("hello world!")
+
+
+func draw()
+    for
+end
