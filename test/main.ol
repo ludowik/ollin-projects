@@ -1,5 +1,5 @@
 
 
 func draw()
-    for
+    for i in []
 end
