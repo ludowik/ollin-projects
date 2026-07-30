@@ -8,7 +8,7 @@ func draw()
     func circle(size)
         var R = size / 4
         var points = []
-        for angle in [0;math.TAU;.05] do
+        for angle in [0;math.TAU;.01] do
             var r = R + 100 * math.noise(
                 math.cos(angle),
                 math.sin(angle),
@@ -16,7 +16,7 @@ func draw()
             points.push(math.cos(angle) * r)
             points.push(math.sin(angle) * r)        
         end
-        graphics.strokeSize(math.map(R, 0, W/5, .1, 2))
+        graphics.strokeSize(math.map(R, 0, W/5, .05, 3))
         graphics.polygon(points)
     end
 
