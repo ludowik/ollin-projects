@@ -1,4 +1,3 @@
-graphics.canvas(W, H)
 func draw()
     graphics.clear()
     graphics.strokeSize(25)
