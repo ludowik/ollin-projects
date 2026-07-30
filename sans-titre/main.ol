@@ -1,12 +1,13 @@
 graphics.canvas(W, H)
 func draw()
-    graphics.strokeSize(10)
+    graphics.clear()
+    graphics.strokeSize(25)
 
     graphics.translate(CW, CH)
 
     var points = []
-    for angle in [0;math.TAU;.05] do
-        var r = 100 * math.noise(
+    for angle in [0;math.TAU;.1] do
+        var r = 250 +100 * math.noise(
             math.cos(angle),
             math.sin(angle),
             elapsedTime/10)
