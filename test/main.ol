@@ -16,10 +16,11 @@ func draw()
             points.push(math.cos(angle) * r)
             points.push(math.sin(angle) * r)        
         end
-        graphics.strokeSize(math.clamp(R, , 1, 5))
+        graphics.strokeSize(math.map(R, 0, W/5, .1, 2))
         graphics.polygon(points)
     end
 
+    for W in 
     circle(W)
     circle(W-50)
     circle(W-150)
