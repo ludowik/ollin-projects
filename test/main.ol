@@ -24,10 +24,11 @@ func draw()
     50] do
         circle(w)
     end
+
+    graphics.text(D)
 end
 
 global D = 100
 func mouse.moved(x, y)
-    D = math.sqrt((x-CW)^2+(y-CH
-    Y^2))
+    D = 100 + math.sqrt((x-CW)^2+(y-CH^2))
 end
