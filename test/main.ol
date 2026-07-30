@@ -25,3 +25,8 @@ func draw()
         circle(w)
     end
 end
+
+global 
+func mouse.moved(x,y)
+    
+end
