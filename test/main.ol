@@ -9,7 +9,7 @@ func draw()
         var R = size / 4
         var points = []
         for angle in [0;math.TAU;.01] do
-            var r = R + 100 * math.noise(
+            var r = R + D * math.noise(
                 math.cos(angle),
                 math.sin(angle),
                 elapsedTime/10)
@@ -26,7 +26,8 @@ func draw()
     end
 end
 
-global 
-func mouse.moved(x,y)
-    
+global D = 100
+func mouse.moved(x, y)
+    D = math.sqrt((x-CW)^2+(y-CH
+    Y^2))
 end
