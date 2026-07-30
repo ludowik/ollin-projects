@@ -1,5 +1,5 @@
 
-graphics.canvas(W, H)
+graphics.canvas(H,W)
 
 func draw()
     graphics.clear()
@@ -16,10 +16,9 @@ func draw()
             points.push(math.cos(angle) * r)
             points.push(math.sin(angle) * r)        
         end
-     ##   graphics.strokeSize(math.map(R, 0, W/5, .05, 3))
+        graphics.strokeSize(math.map(R, 0, W/5, .05, 3))
         graphics.polygon(points)
     end
-    
 
     for w in [0;W;
     25] do
