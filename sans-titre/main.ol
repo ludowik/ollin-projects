@@ -1,3 +1,3 @@
 func draw()
-    graphics.point(100, 2)
+    graphics.point(100, 20)
 end
