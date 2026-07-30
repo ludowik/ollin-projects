@@ -25,7 +25,7 @@ func draw()
         circle(w)
     end
 
-    graphics.text(D)
+    graphics.text(D, )
 end
 
 global D = 100
