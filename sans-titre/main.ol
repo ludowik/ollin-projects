@@ -7,5 +7,5 @@ func draw()
     graphics.circle(100, 170, 20)
     graphics.ellipse(100, 220, 20, 20)
 
-    graphics.
+    graphics.polygon([0, 0, 100, 100, 150, 20, 65, 36])
 end
