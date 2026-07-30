@@ -3,7 +3,9 @@ func draw()
     graphics.strokeSize(10)
     graphics.point(100, 20)
     graphics.line(100, 70, 200, 70)
-    graphics.rect(100, 120, 50, 50)
-    graphics.circle(100, 170, 50)
-    graphics.ellipse(x,y,rx,ry)(100, 220, 50)
+    graphics.rect(100-25, 120-25, 50, 50)
+    graphics.circle(100, 170, 20)
+    graphics.ellipse(100, 220, 20, 20)
+
+    graphics.
 end
