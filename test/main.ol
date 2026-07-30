@@ -12,10 +12,11 @@ func draw()
             var r = R + 100 * math.noise(
                 math.cos(angle),
                 math.sin(angle),
-                elapsedTime)
+                elapsedTime/10)
             points.push(math.cos(angle) * r)
             points.push(math.sin(angle) * r)        
         end
+        graphics.strokeSize()
         graphics.polygon(points)
     end
 
