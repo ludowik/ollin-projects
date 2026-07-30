@@ -21,7 +21,7 @@ func draw()
     end
 
     for w in [0;W;
-    50] do
+    25] do
         circle(w)
     end
 
