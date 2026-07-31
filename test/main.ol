@@ -16,12 +16,13 @@ func draw()
             points.push(math.cos(angle) * r)
             points.push(math.sin(angle) * r)        
         end
-        graphics.fill(Color.random())
-        graphics.strokeSize(math.map(size, 0, W/2, .01, 2))
+        var alpha = math.map(size, 0, W/2, .01, 2))
+        graphics.fill(math.noise(size))
+        graphics.strokeSize(al)
         graphics.polygon(points)
     end
 
-    for w in [0;W/2;15] do
+    for w in [W/2;0;-15] do
         circle(w)
     end
 
