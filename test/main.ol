@@ -6,7 +6,6 @@ func draw()
     graphics.translate(CW, CH)
 
     func circle(size)
-        var R = size / 4
         var points = []
         for angle in [0;math.TAU;.01] do
             var r = size + D * math.noise(
@@ -20,8 +19,7 @@ func draw()
         graphics.polygon(points)
     end
 
-    for w in [0;25;
-    1] do
+    for w in [0;W/2;15] do
         circle(w)
     end
 
