@@ -16,9 +16,9 @@ func draw()
             points.push(math.cos(angle) * r)
             points.push(math.sin(angle) * r)        
         end
-        var alpha = math.map(size, 0, W/2, .01, 2))
-        graphics.fill(math.noise(size))
-        graphics.strokeSize(al)
+        var alpha = math.map(size, 0, W/2, .001, .1)
+        graphics.fill(math.noise(size), alpha)
+        graphics.strokeSize(alpha)
         graphics.polygon(points)
     end
 
