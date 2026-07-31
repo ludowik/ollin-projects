@@ -16,7 +16,7 @@ func draw()
             points.push(math.cos(angle) * r)
             points.push(math.sin(angle) * r)        
         end
-        graphics.strokeSize(math.map(R, 0, W/5, .05, 3))
+        ## graphics.strokeSize(math.map(R, 0, W/5, .05, 3))
         graphics.polygon(points)
     end
 
