@@ -9,7 +9,7 @@ func draw()
         var R = size / 4
         var points = []
         for angle in [0;math.TAU;.01] do
-            var r = R + D * math.noise(
+            var r = size + D * math.noise(
                 math.cos(angle),
                 math.sin(angle),
                 elapsedTime/10)
@@ -20,8 +20,8 @@ func draw()
         graphics.polygon(points)
     end
 
-    for w in [0;W;
-    25] do
+    for w in [0;25;
+    1] do
         circle(w)
     end
 
