@@ -28,9 +28,11 @@ func draw()
     end
 
     var n = W/2
+    var step = 5
     while n > 0 do
         circle(n)
-        n -= 1/n
+        n -= step
+        step++
     end
 
     graphics.text(D, 10, 10, 10)
