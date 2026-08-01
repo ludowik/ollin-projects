@@ -1,5 +1,5 @@
 
-graphics.canvas(W,H)
+##graphics.canvas(W,H)
 
 func draw()
     graphics.clear()
