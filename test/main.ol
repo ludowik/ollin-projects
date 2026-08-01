@@ -32,7 +32,7 @@ func draw()
     while n > 0 do
         circle(n)
         n -= step
-        step = math.max(step - .5, 1)
+        step = math.max(step - .8, 1)
     end
 
     graphics.text(D, 10, 10, 10)
