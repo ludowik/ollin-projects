@@ -28,11 +28,11 @@ func draw()
     end
 
     var n = W/2
-    var step = 5
+    var step = 25
     while n > 0 do
         circle(n)
         n -= step
-        step++
+        step = max(step - 1,  1
     end
 
     graphics.text(D, 10, 10, 10)
