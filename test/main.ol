@@ -18,12 +18,13 @@ func draw()
             points.push(math.sin(angle) * r)        
         end
         
-        var alpha = math.map(size, 0, W/2, .001, .01)
+        var alpha = math.map(size, 0, W/2, .0, .1)
         
-        graphics.fill(math.noise(size), alpha)
+        graphics.fill(1, alpha)
         graphics.strokeSize(alpha)
         
         graphics.polygon(points)
+        
     end
 
     for w in [W/2;0;-15] do
