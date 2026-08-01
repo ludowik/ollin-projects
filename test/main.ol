@@ -20,7 +20,7 @@ func draw()
         
         var alpha = math.map(size, 0, W/2, .0, .1)
         
-        graphics.fill(1, alpha)
+        graphics.fill(alpha)
         graphics.strokeSize(alpha)
         
         graphics.polygon(points)
