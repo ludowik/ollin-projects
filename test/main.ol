@@ -27,7 +27,7 @@ func draw()
         
     end
 
-    var n = W/2
+    var n = W/3
     var step = 20
     while n > 0 do
         circle(n)
