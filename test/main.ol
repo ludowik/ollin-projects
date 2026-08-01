@@ -27,8 +27,10 @@ func draw()
         
     end
 
-    for w in [W/2;0;-15] do
+    var n = W/2
+    while n > 0 do
         circle(w)
+        n -= 5
     end
 
     graphics.text(D, 10, 10, 10)
