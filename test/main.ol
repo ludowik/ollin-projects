@@ -9,7 +9,7 @@ func draw()
     func circle(size)
         
         var points = []
-        for angle in [0;math.TAU;.01] do
+        for angle in [0;math.TAU;math.TAU/128] do
             var r = size -D / 2 + D * math.noise(
                 math.cos(angle),
                 math.sin(angle),
