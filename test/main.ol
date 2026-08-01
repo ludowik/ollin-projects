@@ -29,8 +29,8 @@ func draw()
 
     var n = W/2
     while n > 0 do
-        circle(w)
-        n -= 5
+        circle(n)
+        n -= 1/n
     end
 
     graphics.text(D, 10, 10, 10)
