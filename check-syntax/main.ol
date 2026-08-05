@@ -6,7 +6,6 @@ enum Test
     BIDULE
 end
 
-for i in Test do
-    print(i)
+for k,v in Test do
+    print("{k} = {v}")
 end
-    
