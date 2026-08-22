@@ -3,7 +3,7 @@
 
 enum Test
     TRUC,
-    BIDULE
+    BIDULE = 0xEA,
 end
 
 for k,v in Test do
