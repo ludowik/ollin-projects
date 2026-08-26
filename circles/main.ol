@@ -18,7 +18,7 @@ func setup()
         end
     end
 
-    level(1)
+    ## level(1)
     level(3)
     level(5)
     level(7)
