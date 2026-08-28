@@ -1,1 +1,2 @@
 print(time())
+date()
