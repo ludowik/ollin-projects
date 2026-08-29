@@ -10,7 +10,7 @@ func draw()
     
     graphics.text(
         "{d.hour:02d}:{d.minute:02d}:{d.second:02d}:{d.millisecond:02d}",
-        CW, CH)
+        CX, CY)
         
     graphics.text(
         "{d.day}/{d.month}/{d.year}",
