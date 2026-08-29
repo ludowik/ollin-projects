@@ -6,7 +6,7 @@ func draw()
 
     var d = date.now()
 
-    grza
+    graphics.circle(CX, CY, d.millisecond)
     
     graphics.text(
         "{d.hour:02d}:{d.minute:02d}:{d.second:02d}:{d.millisecond:02d}",
