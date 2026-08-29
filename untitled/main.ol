@@ -5,10 +5,12 @@ func draw()
     graphics.clear()
 
     var d = date.now()
+    
     graphics.text(
-        "{d.hour:02d}:{d.minute:02d}:{d.second:02d}",
+        "{d.hour:02d}:{d.minute:02d}:{d.second:02d}:{d.second:02d}",
         CW, CH)
+        
     graphics.text(
-        "{d.day}:{d.minute:02d}:{date.now().second:02d}",
+        "{d.day}/{d.month}/{d.year}",
         CW, CH+32)
 end
