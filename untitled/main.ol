@@ -5,9 +5,11 @@ func draw()
     graphics.clear()
 
     var d = date.now()
+
+    grza
     
     graphics.text(
-        "{d.hour:02d}:{d.minute:02d}:{d.second:02d}:{d.second:02d}",
+        "{d.hour:02d}:{d.minute:02d}:{d.second:02d}:{d.millisecond:02d}",
         CW, CH)
         
     graphics.text(
