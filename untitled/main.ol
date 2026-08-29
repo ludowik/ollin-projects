@@ -2,5 +2,7 @@ print(time())
 print(date.now())
 
 func draw()
-    graphics.text(date.now().second, 0, 0)
+    graphics.clear()
+    graphics.text(
+    "{date.now().second}, CW, CH)
 end
