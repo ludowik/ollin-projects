@@ -1,2 +1,2 @@
 print(time())
-date()
+print(date.now())
