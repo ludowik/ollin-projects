@@ -13,6 +13,8 @@ func draw()
     graphics.circle(CX, CY, 
         math.map(d.millisecond, 0, 1000, 0, 100))
 
+    graphics.fill(1)
+        
     graphics.circle(CX, CY, 
         math.map(d.second, 0, 60, 0, 100))
 
