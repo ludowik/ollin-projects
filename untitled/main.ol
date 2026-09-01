@@ -13,7 +13,7 @@ func draw()
     graphics.circle(CX, CY, 
         math.map(d.millisecond, 0, 1000, 0, 100))
 
-    graphics.textMode(CENTER)
+    graphics.textMode(center)
     graphics.text(
         "{d.hour:02d}:{d.minute:02d}:{d.second:02d}:{d.millisecond:02d}",
         CX, CY)
