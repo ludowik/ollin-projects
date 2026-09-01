@@ -7,16 +7,19 @@ func draw()
     var d = date.now()
 
     graphics.noStroke()
-    graphics.fill(1, 
+    graphics.fill(1,
         math.map(d.millisecond, 0, 1000, 1, 0))
         
     graphics.circle(CX, CY, 
         math.map(d.millisecond, 0, 1000, 0, 100))
 
+    graphics.circle(CX, CY, 
+        math.map(d.millisecond, 0, 1000, 0, 100))
+
     graphics.textMode("center", "center")
     graphics.text(
-        "{d.hour:02d}:{d.minute:02d}:{d.second:02d}:{d.millisecond:02d}",
-        CX, CY)
+        "{d.hour:02d}:{d.minute:02d}:{d.second:02d}",
+        CX, CY-32)
         
     graphics.text(
         "{d.day}/{d.month}/{d.year}",
