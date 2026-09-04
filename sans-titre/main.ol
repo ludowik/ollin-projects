@@ -3,4 +3,4 @@ print("{x*2:.3f}", "hello")
 printf("{x}", x*2)
 print("aa","bb")
 
-static 
+static a = 1
