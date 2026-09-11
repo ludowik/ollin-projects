@@ -4,10 +4,16 @@ printf("{x}", x*2)
 print("aa","bb")
 
 
-a = 1
+var a = 1
 
 class Test
     func init()
+        self.
+    end 
+
+    func go()
+        print("coucou")
     end
-    
 end
+
+Test().go()
