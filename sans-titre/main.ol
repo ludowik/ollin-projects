@@ -6,4 +6,8 @@ print("aa","bb")
 
 a = 1
 
-class
+class Test
+    func init()
+    end
+    
+end
