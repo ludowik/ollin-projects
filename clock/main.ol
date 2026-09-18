@@ -9,19 +9,19 @@ func draw()
     do
         graphics.noStroke()
         graphics.fill(
-            math.map(d.millisecond, 1, 1000, 1, 0))
+            math.map(d.millisecond, 0, 999, 1, 0))
             
         graphics.circle(CX, CY, 
-            math.map(d.millisecond, 1, 1000, 0, 110))
+            math.map(d.millisecond, 0, 999, 1, 100))
     end
 
     graphics.rectMode("center")
     graphics.rect(15, CY, 10,
             math.map(d.millisecond, 0, 1000, 0, math.map(d.second, 0, 60, 0, 100)))
     graphics.rect(25, CY, 10,
-            math.map(d.second, 0, 60, 0, 100))
+            math.map(d.second, 0, 59, 0, 100))
     graphics.rect(35, CY, 10,
-            math.map(d.minute, 0, 60, 0, 100))
+            math.map(d.minute, 0, 59, 0, 100))
     
     graphics.fill(colors.BLUE)        
     graphics.circle(CX, CY, 
