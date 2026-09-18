@@ -9,10 +9,10 @@ func draw()
     do
         graphics.noStroke()
         graphics.fill(
-            math.map(d.millisecond, 0, 1000, 1, 0))
+            math.map(d.millisecond, 1, 1000, 1, 0))
             
         graphics.circle(CX, CY, 
-            math.map(d.millisecond, 0, 1000, 0, 110))
+            math.map(d.millisecond, 1, 1000, 0, 110))
     end
 
     graphics.rectMode("center")
