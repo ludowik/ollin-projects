@@ -15,8 +15,11 @@ func draw()
             math.map(d.millisecond, 0, 1000, 0, 110))
     end
 
-    graphics.rect(0, 0, 10, 
-            math.map(d.millisecond, 0, 1000, 0, 110))        
+    graphics.rectMode("center")
+    graphics.rect(15, CY, 10,
+            math.map(d.millisecond, 0, 1000, 0, 110))
+    graphics.rect(15, CY, 10,
+            math.map(d.millisecond, 0, 1000, 0, 110))
     
     graphics.fill(colors.BLUE)        
     graphics.circle(CX, CY, 
