@@ -12,8 +12,11 @@ func draw()
             math.map(d.millisecond, 0, 1000, 1, 0))
             
         graphics.circle(CX, CY, 
-            math.map(d.millisecond, 0, 1000, 0, 110))        
+            math.map(d.millisecond, 0, 1000, 0, 110))
     end
+
+    graphics.rect(0, 0, 10, 
+            math.map(d.millisecond, 0, 1000, 0, 110))        
     
     graphics.fill(colors.BLUE)        
     graphics.circle(CX, CY, 
