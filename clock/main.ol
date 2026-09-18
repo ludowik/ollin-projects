@@ -8,7 +8,7 @@ func draw()
 
     do
         graphics.noStroke()
-        graphics.fill(math.rand(),
+        graphics.fill(
             math.map(d.millisecond, 0, 1000, 1, 0))
             
         graphics.circle(CX, CY, 
