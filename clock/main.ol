@@ -6,24 +6,25 @@ func draw()
 
     var d = date.now()
 
+    do
     graphics.noStroke()
     graphics.fill(1,
         math.map(d.millisecond, 0, 1000, 1, 0))
         
     graphics.circle(CX, CY, 
         math.map(d.millisecond, 0, 1000, 100, 0))
-
-    graphics.fill(1)
+end
+    ## graphics.fill(1)
         
-    graphics.circle(CX, CY, 
-        math.map(d.second, 0, 60, 0, 100))
+    ## graphics.circle(CX, CY, 
+        ## math.map(d.second, 0, 60, 0, 100))
 
-    graphics.textMode("center", "center")
-    graphics.text(
-        "{d.hour:02d}:{d.minute:02d}:{d.second:02d}",
-        CX, CY-32)
+    ## graphics.textMode("center", "center")
+    ## graphics.text(
+        ## "{d.hour:02d}:{d.minute:02d}:{d.second:02d}",
+        ## CX, CY-32)
         
-    graphics.text(
-        "{d.day}/{d.month}/{d.year}",
-        CX, CY+32)
+    ## graphics.text(
+        ## "{d.day}/{d.month}/{d.year}",
+        ## CX, CY+32)
 end
