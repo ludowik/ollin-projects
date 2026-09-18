@@ -17,10 +17,10 @@ func draw()
         
     end
     
-    ## graphics.fill(1)
+    graphics.fill(1)
         
-    ## graphics.circle(CX, CY, 
-        ## math.map(d.second, 0, 60, 0, 100))
+    graphics.circle(CX, CY, 
+        math.map(d.second, 0, 60, 0, 100))
 
     ## graphics.textMode("center", "center")
     ## graphics.text(
