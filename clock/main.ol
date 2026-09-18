@@ -7,13 +7,14 @@ func draw()
     var d = date.now()
 
     do
-    graphics.noStroke()
-    graphics.fill(1,
-        math.map(d.millisecond, 0, 1000, 1, 0))
-        
-    graphics.circle(CX, CY, 
-        math.map(d.millisecond, 0, 1000, 100, 0))
-end
+        graphics.noStroke()
+        graphics.fill(1,
+            math.map(d.millisecond, 0, 1000, 1, 0))
+            
+        graphics.circle(CX, CY, 
+            math.map(d.millisecond, 0, 1000, 0, 110))
+    end
+    
     ## graphics.fill(1)
         
     ## graphics.circle(CX, CY, 
