@@ -1,3 +1,5 @@
+graphics.canvas(480, )
+
 func draw()
     graphics.clear()
 
