@@ -36,7 +36,7 @@ end
 func update(dt)
     for bubble in bubbles do
         bubble.update(dt)
-        bubbles.delete(bubble)
+        array.remove(bubbles, bubble)
     end    
 end
 
