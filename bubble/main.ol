@@ -21,7 +21,7 @@ class Bubble
         self.x += self.dx * self.speed * dt
         self.y += self.dy * self.speed * dt
 
-        self.life--
+        self.life -= 1
         if self.life<=0 then
         end
     end
