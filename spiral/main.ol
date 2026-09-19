@@ -1,4 +1,4 @@
-graphics.canvas(480, )
+graphics.canvas(480, 270)
 
 func draw()
     graphics.clear()
@@ -8,6 +8,6 @@ func draw()
         var sy = CY + math.sin(-elapsedTime/2 + i/30) * 9
         var r = 2 + i*3
 
-        graphics.circle(sx, sy, r)
+        graphics.circle(sx, sy, r+r)
     end
 end
