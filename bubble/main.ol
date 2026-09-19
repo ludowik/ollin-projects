@@ -1,7 +1,12 @@
 var bubbles = []
 
-class Bubble do
-    init(x, y)
+class Bubble
+    func init(x, y)
+        self.x = x
+        self.y = y
+
+        self.clr = Color(grey | r, g, b [, a])
+    end
 end
 
 func draw()
@@ -11,5 +16,5 @@ func draw()
 end
 
 func mouse.moved(x, y)
-    bubbles.insert({x:x, y:y})
+    bubbles.insert(Bubble(x, y))
 end
