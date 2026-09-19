@@ -10,6 +10,8 @@ class Bubble
         self.dx = math.rand(-1, 1)
         self.dy = math.rand(-1, 1)
 
+        self.life = 200
+
         self.speed = math.rand(SIZE/4)
 
         self.clr = Color.random()
@@ -19,7 +21,9 @@ class Bubble
         self.x += self.dx * self.speed * dt
         self.y += self.dy * self.speed * dt
 
-        if self.
+        self.life--
+        if self.life<=0 then
+        end
     end
 
     func draw()
