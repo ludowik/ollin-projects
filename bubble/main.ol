@@ -1,5 +1,7 @@
 var bubbles = []
 
+var SIZE = math.max(W, H)
+
 class Bubble
     func init(x, y)
         self.x = x
@@ -8,7 +10,7 @@ class Bubble
         self.dx = math.rand(-1, 1)
         self.dy = math.rand(-1, 1)
 
-        self.speed = math.rand(W/2, 50)
+        self.speed = math.rand(SIZE/4)
 
         self.clr = Color.random()
     end
@@ -16,6 +18,8 @@ class Bubble
     func update(dt)
         self.x += self.dx * self.speed * dt
         self.y += self.dy * self.speed * dt
+
+        if self.
     end
 
     func draw()
