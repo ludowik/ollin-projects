@@ -8,14 +8,14 @@ class Bubble
         self.dx = math.rand(-1, 1)
         self.dy = math.rand(-1, 1)
 
-        self.speed = math.rand(2, 5)
+        self.speed = math.rand(W/2, 50)
 
         self.clr = Color.random()
     end
 
     func update(dt)
-        self.x += self.dx * self.speed * self.speed
-        self.y += self.dy
+        self.x += self.dx * self.speed * dt
+        self.y += self.dy * self.speed * dt
     end
 
     func draw()
@@ -26,7 +26,7 @@ end
 
 func update(dt)
     for bubble in bubbles do
-        bubble.update()
+        bubble.update(dt)
     end    
 end
 
