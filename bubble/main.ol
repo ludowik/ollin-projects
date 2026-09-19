@@ -22,12 +22,17 @@ class Bubble
     end
 end
 
+func update(dt)
+    for bubble in bubbles do
+        bubble.update()
+    end    
+end
+
 func draw()
     graphics.clear()
     graphics.noStroke()
     for bubble in bubbles do
         bubble.draw()
-        bubble.update()
     end
 end
 
