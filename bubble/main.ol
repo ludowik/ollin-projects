@@ -23,6 +23,7 @@ class Bubble
 
         self.life -= 1
         if self.life<=0 then
+            self.dead = true
         end
     end
 
@@ -35,6 +36,7 @@ end
 func update(dt)
     for bubble in bubbles do
         bubble.update(dt)
+        bubble.remove(bubble)
     end    
 end
 
