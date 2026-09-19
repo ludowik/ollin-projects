@@ -15,14 +15,18 @@ class Bubble
         self.x += self.dx
         self.y += self.dy
     end
+
+    func draw()
+        graphics.fill(self.clr)    
+        graphics.circle(self.x, self.y, 5)    
+    end
 end
 
 func draw()
+    graphics.clear()
     graphics.noStroke()
     for bubble in bubbles do
-        graphics.fill(bubble.clr)    
-        graphics.circle(bubble.x, bubble.y, 5)
-
+        bubble.draw()
         bubble.update()
     end
 end
