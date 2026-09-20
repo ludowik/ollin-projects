@@ -10,7 +10,7 @@ class Bubble
         self.dx = math.rand(-1, 1)
         self.dy = math.rand(-1, 1)
 
-        self.life = math.rand([lo,hi])
+        self.life = math.rand(45, 90)
 
         self.speed = math.rand(SIZE/4)
 
@@ -29,7 +29,7 @@ class Bubble
 
     func draw()
         graphics.fill(self.clr)    
-        graphics.circle(self.x, self.y, self.life)    
+        graphics.circle(self.x, self.y, math.map(x,ilo,ihi,olo,ohi)self.life)    
     end
 end
 
