@@ -10,7 +10,7 @@ class Bubble
         self.dx = math.rand(-1, 1)
         self.dy = math.rand(-1, 1)
 
-        self.life = 200
+        self.life = 60
 
         self.speed = math.rand(SIZE/4)
 
@@ -29,15 +29,16 @@ class Bubble
 
     func draw()
         graphics.fill(self.clr)    
-        graphics.circle(self.x, self.y, 5)    
+        graphics.circle(self.x, self.y, self.life)    
     end
 end
 
 func update(dt)
     for i, bubble in bubbles do
         bubble.update(dt)
-        if bubble.de
-        bubbles.delete(i)
+        if bubble.dead then
+            bubbles.delete(i)
+        end 
     end    
 end
 
