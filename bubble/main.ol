@@ -29,7 +29,7 @@ class Bubble
 
     func draw()
         graphics.fill(self.clr)    
-        graphics.circle(self.x, self.y, math.map(self.life, 0, 120, )self.life)    
+        graphics.circle(self.x, self.y, math.map(self.life, 0, 120, 0, 15))    
     end
 end
 
