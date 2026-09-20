@@ -36,7 +36,8 @@ end
 func update(dt)
     for i, bubble in bubbles do
         bubble.update(dt)
-        bubbles.delete(bubble)
+        if bubble.de
+        bubbles.delete(i)
     end    
 end
 
