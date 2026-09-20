@@ -34,7 +34,7 @@ class Bubble
 end
 
 func update(dt)
-    for bubble in bubbles do
+    for i, bubble in bubbles do
         bubble.update(dt)
         bubbles.delete(bubble)
     end    
