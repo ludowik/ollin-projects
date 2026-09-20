@@ -10,7 +10,7 @@ class Bubble
         self.dx = math.rand(-1, 1)
         self.dy = math.rand(-1, 1)
 
-        self.life = 60
+        self.life = math.rand([lo,hi])
 
         self.speed = math.rand(SIZE/4)
 
