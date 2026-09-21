@@ -22,7 +22,7 @@ class Bubble
         self.y += self.dy * self.speed * dt
 
         self.life -= 1
-        if self.life<=0 then
+        if self.life<=10 then
             self.dead = true
         end
     end
