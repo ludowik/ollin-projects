@@ -12,7 +12,7 @@ class Bubble
 
         self.life = math.rand(45, 90)
 
-        self.speed = math.rand(SIZE/4, SIZE)
+        self.speed = math.rand(SIZE/4, SIZE/2)
 
         self.clr = Color.random()
     end
