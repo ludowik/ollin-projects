@@ -34,10 +34,10 @@ class Bubble
 end
 
 func update(dt)
-    for i, bubble in bubbles do
+    for bubble in bubbles do
         bubble.update(dt)
         if bubble.dead then
-            bubbles.delete(i)
+            bubbles.remove(bubble)
         end 
     end    
 end
