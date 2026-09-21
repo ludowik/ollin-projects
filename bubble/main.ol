@@ -22,14 +22,14 @@ class Bubble
         self.y += self.dy * self.speed * dt
 
         self.life -= 1
-        if self.life<=10 then
+        if self.life<=-100 then
             self.dead = true
         end
     end
 
     func draw()
         graphics.fill(self.clr)    
-        graphics.circle(self.x, self.y, math.map(self.life, 0, 120, 0, 15))    
+        graphics.circle(self.x, self.y, math.map(self.life, 0, 120, 1, 15))    
     end
 end
 
