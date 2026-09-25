@@ -17,7 +17,7 @@ func draw()
     end
 
     for w in [0;50[ do
-        circle(w*2)
+        circle(w*10)
     end
 
     graphics.resetTransform()
