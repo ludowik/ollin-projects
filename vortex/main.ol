@@ -6,12 +6,12 @@ func draw()
         var R = size / 4
         var points = []
         for angle in [0;math.TAU;.01] do
-            var r = R + SIZE * math.noise(
+            var r = R + SIZE / 2 * math.noise(
                 math.cos(angle),
                 math.sin(angle),
                 elapsedTime/10)
             points.add(math.cos(angle) * r)
-            points.push(math.sin(angle) * r)        
+            points.add(math.sin(angle) * r)        
         end
         graphics.strokeSize(math.map(R, 0, W/5, .05, 3))
         graphics.polygon(points)
