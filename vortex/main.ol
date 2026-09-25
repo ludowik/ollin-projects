@@ -1,3 +1,4 @@
+global D = 100
 func draw()
     graphics.clear()
     graphics.translate(CX, CY)
@@ -25,7 +26,6 @@ func draw()
     graphics.text(D, 100, 100, 100)
 end
 
-global D = 100
-func mouse.moved(x, y)
-    D = 10 + math.sqrt((x-CW)^2+(y-CH)^2)
-end
+## func mouse.moved(x, y)
+    ## D = 10 + math.sqrt((x-CX)^2+(y-CY)^2)
+## end
