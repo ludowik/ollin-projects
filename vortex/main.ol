@@ -16,8 +16,8 @@ func draw()
         graphics.polygon(points)
     end
 
-    for w in [0;W;1[ do
-        circle(w)
+    for w in [0;50[ do
+        circle(w*2)
     end
 
     graphics.resetTransform()
