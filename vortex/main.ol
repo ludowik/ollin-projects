@@ -23,7 +23,6 @@ func draw()
     end
 
     graphics.resetTransform()
-    graphics.text(D, 100, 100, 100)
 end
 
 ## func mouse.moved(x, y)
