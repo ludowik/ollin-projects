@@ -1,4 +1,3 @@
-global D = 100
 func draw()
     graphics.clear()
     graphics.translate(CX, CY)
@@ -7,7 +6,7 @@ func draw()
         var R = size / 4
         var points = []
         for angle in [0;math.TAU;.01] do
-            var r = R + D * math.noise(
+            var r = R + SIZE * math.noise(
                 math.cos(angle),
                 math.sin(angle),
                 elapsedTime/10)
@@ -24,7 +23,3 @@ func draw()
 
     graphics.resetTransform()
 end
-
-## func mouse.moved(x, y)
-    ## D = 10 + math.sqrt((x-CX)^2+(y-CY)^2)
-## end
