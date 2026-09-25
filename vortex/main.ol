@@ -1,6 +1,6 @@
 func draw()
     graphics.clear()
-    graphics.translate(CW, CH)
+    graphics.translate(CX, CY)
 
     func circle(size)
         var R = size / 4
