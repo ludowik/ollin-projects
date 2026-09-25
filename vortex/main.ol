@@ -10,7 +10,7 @@ func draw()
                 math.cos(angle),
                 math.sin(angle),
                 elapsedTime/10)
-            points.addd(math.cos(angle) * r)
+            points.add(math.cos(angle) * r)
             points.push(math.sin(angle) * r)        
         end
         graphics.strokeSize(math.map(R, 0, W/5, .05, 3))
