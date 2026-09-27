@@ -16,7 +16,7 @@ func draw()
         graphics.polygon(points)
     end
 
-    for w in [0;50[ do
+    for w in [0;50;2[ do
         circle(w*10)
     end
 
