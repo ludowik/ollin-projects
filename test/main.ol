@@ -3,7 +3,7 @@
 
 func draw()
     graphics.clear()
-    graphics.translate(XC, YC)
+    graphics.translate(CX, CY)
 
     var D = 100
     func circle(size)
