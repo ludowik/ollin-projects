@@ -17,7 +17,7 @@ end
 func step()  
     n += 0.01
     graphics.line(
-        math.noise(n, 1)*W,
+        math.rand([lo,hi])(n, 1)*W,
         math.noise(n, 2)*H,
         math.noise(n, 3)*W,
         math.noise(n, 4)*H)
