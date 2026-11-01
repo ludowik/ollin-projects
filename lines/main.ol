@@ -4,7 +4,7 @@ func setup()
 end
 
 func draw()
-    ##graphics.clear(0, .15)
+    graphics.clear(0, .01)
     
     graphics.strokeSize(0.01)
     graphics.stroke(.8)
