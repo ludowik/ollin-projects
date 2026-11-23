@@ -1,9 +1,8 @@
-
-##graphics.canvas(W,H)
+##gfx.canvas(W,H)
 
 func draw()
-    graphics.clear()
-    graphics.translate(CX, CY)
+    gfx.clear()
+    gfx.translate(CX, CY)
 
     var D = 100
     func circle(size)
@@ -20,10 +19,10 @@ func draw()
         
         var alpha = math.map(size, 0, W/2, .0, .25)
         
-        graphics.fill(alpha)
-        graphics.strokeSize(10*alpha)
+        gfx.fill(alpha)
+        gfx.strokeSize(10*alpha)
         
-        graphics.polygon(points)
+        gfx.polygon(points)
         
     end
 
@@ -35,5 +34,5 @@ func draw()
         step = math.max(step - .5, 1)
     end
 
-    graphics.text(D, 10, 10, 10)
+    gfx.text(D, 10, 10, 10)
 end
