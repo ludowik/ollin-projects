@@ -1,6 +1,6 @@
 import "circle"
 
-graphics.canvas(W, H, "circles")
+gfx.canvas(W, H, "circles")
 
 func setup()
     global circles = []
@@ -25,8 +25,8 @@ func setup()
 end
 
 func draw()
-    graphics.blendMode(blend.ALPHA)
-    graphics.clear(0, .05)
+    gfx.blendMode(blend.ALPHA)
+    gfx.clear(0, .05)
     for c in circles do
         c.draw()
     end
