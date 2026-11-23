@@ -1,13 +1,13 @@
 func setup()
-    graphics.canvas(W, H)
+    gfx.canvas(W, H)
     global n = 0
 end
 
 func draw()
-    graphics.clear(0, .025)
+    gfx.clear(0, .025)
     
-    graphics.strokeSize(0.01)
-    graphics.stroke(.8)
+    gfx.strokeSize(0.01)
+    gfx.stroke(.8)
 
     for i in [1;100] do 
         step()
@@ -16,7 +16,7 @@ end
 
 func step()  
     n += 0.01
-    graphics.line(
+    gfx.line(
         math.rand()*W,
         math.rand()*H,
         math.rand()*W,
