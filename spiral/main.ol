@@ -1,8 +1,8 @@
 func draw()
-    graphics.clear()
+    gfx.clear()
 
-    graphics.translate(CX, CY)
-    graphics.scale(2)
+    gfx.translate(CX, CY)
+    gfx.scale(2)
 
     for i=1,W,2 do
         var sx = math.cos((-time()/2 + i/30)*math.PI) * 9
@@ -10,6 +10,6 @@ func draw()
         
         var r = 2 + i*3
 
-        graphics.circle(sx, sy, r)
+        gfx.circle(sx, sy, r)
     end
 end
