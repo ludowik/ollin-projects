@@ -1,6 +1,6 @@
 func draw()
-    graphics.clear()
-    graphics.translate(CX, CY)
+    gfx.clear()
+    gfx.translate(CX, CY)
 
     func circle(R)
         var points = []
@@ -12,13 +12,13 @@ func draw()
             points.add(math.cos(angle) * r)
             points.add(math.sin(angle) * r)        
         end
-        graphics.strokeSize(math.map(R, 0, W/5, .5, 7))
-        graphics.polygon(points)
+        gfx.strokeSize(math.map(R, 0, W/5, .5, 7))
+        gfx.polygon(points)
     end
 
     for w in [0;50;3[ do
         circle(w*10)
     end
 
-    graphics.resetTransform()
+    gfx.resetTransform()
 end
