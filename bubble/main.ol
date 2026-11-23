@@ -28,8 +28,8 @@ class Bubble
     end
 
     func draw()
-        graphics.fill(self.clr)    
-        graphics.circle(self.x, self.y, math.map(self.life, 0, 120, 1, 15))    
+        gfx.fill(self.clr)    
+        gfx.circle(self.x, self.y, math.map(self.life, 0, 120, 1, 15))    
     end
 end
 
@@ -43,8 +43,8 @@ func update(dt)
 end
 
 func draw()
-    graphics.clear()
-    graphics.noStroke()
+    gfx.clear()
+    gfx.noStroke()
     
     for bubble in bubbles do
         bubble.draw()
